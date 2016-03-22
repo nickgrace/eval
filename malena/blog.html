@@ -1,0 +1,109 @@
+<!--
+
+Nice work, Malena. Looks close to the design in the browser! I made some comments below in the HTML and also in your CSS file. Good that you use a single CSS file for both the blog and the homepage!
+
+I noticed some duplication in the CSS. You should think of ways that you can better combine your styles. For example, you give a width of 700 pixels to the articles in addition to the parent container around the articles. Just set the width once on the parent.
+
+Nick
+
+-->
+
+<!doctype HTML>
+
+<html>
+
+	<head>
+        <title>Relaxr Blog Page</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- Order of CSS should be:
+        - Normalize
+        - Google Fonts
+        - Font Awesome
+        - style.css
+        -->
+		
+
+        <meta charset="utf-8">
+    	<meta name="description" content="Get Peace of Mind with a Single Tap"><!-- Excellent! -->
+    </head>
+    
+    <body>
+		<div class="header">
+ 			<h1 class="logo">Relaxr</h1>
+				<nav class="nav-main">
+				  <ul>
+				    <li><a href="#">About</a></li>
+				    <li><a href="#">FAQ</a></li>
+				    <li><a href="#">Team</a></li>
+				    <li><a href="#">Contact Us</a></li>
+				    <li><a href="#">Blog</a></li>
+				  </ul>
+				</nav>
+		</div>
+
+	<div class="wrapper">
+		<div class="article_wrapper">
+		<article class="article1">
+			<h2>How I implemented Relaxr in 2 weeks and changed my life.</h2><!-- Should be H1 and should also link to the article. -->
+			<img src="images/blog_photo1.jpg" alt="Article One Photo">
+
+				<!-- I commented out the incorrect code below. Instead if you want to isolate the first letter, you can use something like "article p:first-leter {}" in your CSS. -->
+				<p><!-- <p: first-letter> -->Cupcake sweet bear claw danish chocolate cake pastry gummi bears. Chupa chups pudding icing chocolate bar oat cake jelly. Biscuit gummi bears lollipop muffin caramels. Sweet topping lemon drops liquorice tiramisu ice cream. Cupcake gingerbread sesame snaps. Chocolate toffee powder. Chupa chups toffee carrot cake cheesecake liquorice halvah lollipop fruitcake. Halvah jelly beans oat cake cake powder tart. Jelly sweet oat cake tiramisu pie macaroon icing. Dessert brownie sesame snaps pastry jelly beans cupcake toffee brownie. Dragée croissant gingerbread dragée icing cotton candy icing. Halvah cake sesame snaps tart carrot cake. Sweet roll dessert caramels sugar plum liquorice wafer cheesecake bear claw caramels.<!-- </p:> --></p>
+
+				<a class="readmore" href="http://www.google.com">Read More ></a>
+				<hr>
+		</article>
+
+		<article class="article2">
+			<h2>I traveled across the globe thanks to Relaxr's Excel Automation.</h2><!-- H1 and link. -->
+			<img src="images/blog_photo2.jpg" alt="Article Two Photo">
+
+				<p><!-- <p: first-letter> -->Cupcake sweet bear claw danish chocolate cake pastry gummi bears. Chupa chups pudding icing chocolate bar oat cake jelly. Biscuit gummi bears lollipop muffin caramels. Sweet topping lemon drops liquorice tiramisu ice cream. Cupcake gingerbread sesame snaps. Chocolate toffee powder. Chupa chups toffee carrot cake cheesecake liquorice halvah lollipop fruitcake. Halvah jelly beans oat cake cake powder tart. Jelly sweet oat cake tiramisu pie macaroon icing. Dessert brownie sesame snaps pastry jelly beans cupcake toffee brownie. Dragée croissant gingerbread dragée icing cotton candy icing. Halvah cake sesame snaps tart carrot cake. Sweet roll dessert caramels sugar plum liquorice wafer cheesecake bear claw caramels.<!-- </p:> --></p>
+
+				<a class="readmore" href="http://www.google.com">Read More ></a>
+				<hr><!-- Use hr only as a separator of content in a long article. Instead, put border-bottom style on the article tag in your CSS. -->
+		</article>
+		</div>
+	</div>
+
+<div class="sidebar">
+	<section>
+		<h1 class"categories">Categories</h1><!-- Good use of H1! -->
+		<ul>
+			<li><a href="#">Success stories</a></li><!-- Good links -->
+			<li><a href="#">Stats</a></li>
+			<li><a href="#">How tos</a></li>
+			<li><a href="#">Best of</a></li>
+			<li><a href="#">Business tips</a></li>
+		</ul>
+	</section>
+	<section>
+		<h1>About Relaxr</h1>
+		<p>Cupcake gingerbread sesame snaps. Chocolate toffee powder. Chupa chups toffee carrot cake cheesecake liquorice halvah lollipop fruitcake. Halvah jelly beans oat cake cake powder tart. Jelly sweet oat cake tiramisu pie macaroon icing.<br>
+		<a class="learn" href="#">Learn More</a></p>
+			<img src="images/ad-unit.png" alt="Ad Unit"><!-- The ad should be in its own <section>. -->
+	</section>	
+</div>
+
+
+
+	<aside class="yellowbanner"><!-- "Sign Up" is too important to be in an aside tag. Use section instead. -->
+		
+		<a class="btn btn-cta" href="http://www.dunkindonuts.com" target="_blank">Sign Up Now!</a></aside><!-- Nice touch with Dunkin Donuts. :) -->
+
+	<footer class="pageFooter">
+			<h1 class="logo">Relaxr</h1>
+
+			<ul><!-- Excellent use of an unordered list! -->
+				<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+				<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+			</ul>
+
+			<p class="copyright">Copyright 2016. Relaxr.</p>
+		</footer>
+	</body>
+</html>

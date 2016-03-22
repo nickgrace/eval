@@ -1,0 +1,364 @@
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+body {
+  color: #f0efef;
+  font-size: 26px;
+  line-height: 1.4;
+  color: grey;
+  background-color: #f0efef;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Center the container */
+ .container {/* NICK: Nice work with the container. */
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+
+.pageIntro {
+  height: 700px;
+  background: url(../images/header_bg.jpg) no-repeat top center #131e27;
+  padding-top: 32px;
+}
+
+.pageIntro .logo {
+  color: #fff;
+}
+
+.slogan {
+  font-size: 48px;
+  text-align: center;
+  color: #fff;
+  margin: 120px 0 90px;
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 280px;
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.rotate:hover
+{
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}
+
+.btn-cta {
+  background: #f9e42e;
+  color: #033048;
+}
+
+.btn-signup {
+  background: #033048;
+  color: #fff;
+  font-size: 24px;
+}
+
+.benefits {
+  padding: 100px 0 80px;
+}
+
+.benefits .container h1 {
+  color: #033048;
+  font-size: 40px;
+  font-weight: 600; 
+  margin-bottom: 40px;
+}
+.benefits p, .benefits ul {
+  width: 600px;
+}
+
+.benefits ul {
+  list-style: disc;
+  margin: 30px 0 0 80px;
+}
+
+.quote {
+  background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
+  color: #fff;
+
+}
+
+.quote {
+  padding: 70px 0 70px;
+}
+
+.quote blockquote {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 580px;
+  margin: 0 auto;
+
+}
+
+.quote blockquote .author {
+  font-weight: 600; 
+  display: block; 
+  font-style:normal;
+}
+
+
+.yellowbanner {
+  background: #f9e42e;
+  padding: 30px;
+  text-align: center;
+  clear: left; 
+}
+
+
+.yellowbanner .btn-cta {
+  background: #033048;
+  color: #fff;
+}
+
+.pageFooter {
+  background: #121212;
+  padding: 65px 0 45px;
+  text-align: center;
+}
+
+.pageFooter .logo {
+  color: #f9e42e;
+  margin-bottom: 68px;
+}
+
+.pageFooter ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 26px 75px;
+}
+
+.pageFooter p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.pageFooter a {
+  color: white;
+  font-size: 2em;
+}
+
+/*~~~~~~~blog~~~~~`*/
+/* NICK: Nice use of commenting! */
+.wrapper p { 
+  width: 700px;
+
+}
+
+.wrapper {
+    margin-right: 0px;/* When value is 0 don't use unit like px. */
+    float: left;
+    margin-left: 145px;
+    width: 750px;
+}
+
+.header {
+    height: 100px;
+    background: #033048;
+    border:1px solid #033048;
+    width: 100%; 
+    margin: 0px auto;/* When value is 0 don't use unit like px. */
+}
+
+
+.header .logo {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  color: white;
+  margin-left: 11%;
+  margin-right: 0; 
+
+}
+
+
+.nav-main a:hover {
+    color: white;
+
+}
+
+.wrapper {
+  width: 875px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  padding-top: 50px;
+
+
+}
+
+.nav-main {
+  list-style: none; 
+  margin: -5% auto; 
+    
+}
+
+.nav-main li {
+  display: inline-block;
+  margin-right: 15px;
+
+}
+
+.nav-main ul {
+  margin: 0.5em 0;
+  float: right;
+  margin-left: 11%;
+  margin-right: 0;
+  margin: 0.5em 0; 
+  margin-right: 100px;
+
+
+}
+
+.nav-main a {
+  color: #f9e42e;
+  padding: 5px; 
+  text-align: center; 
+  font-size: 24px;
+}
+
+
+h2 { 
+  font-weight: 600;
+  color: #033048; 
+}
+
+.readmore {
+  font-weight: 600;
+  font-size: 24px; 
+  text-align: right;
+  margin-top: 30px;
+  color: #033048;
+  text-align: right;
+  float: right;
+  margin-bottom: 15px;
+}
+
+.sidebar {
+  padding-top: 50px;
+  margin-right: 5%;
+}
+
+
+.article1 p::first-letter {/* Excellent! You can actually combine this and the one below. */
+    font-size: 300%;
+    color: grey;
+
+}
+
+.article2 p::first-letter {
+    font-size: 300%;
+    color: grey;
+}
+
+.article1 { 
+  margin-left: 145px;
+  width: 700px;/* No need to declare this width so many times. This should already be 100% width of its parent container. */
+
+
+}
+.article2 { 
+  margin-left: 145px;
+  width: 700px;
+
+}
+
+.article_wrapper { 
+  width: 700px;
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+hr {/* Instead of HR, use border-bottom on the article tag. */
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 702px;
+
+} 
+
+
+}
+.sidebar {
+  width: 240px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sidebar ul {
+    list-style-type: none;
+
+}
+
+.sidebar h1 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #043049;
+}
+.sidebar ul {
+  margin-bottom: 40px;
+}
+.sidebar ul li a {
+      list-style-type: none;
+  color: #043049;
+  font-size: 24px;
+}
+
+.sidebar p {
+  font-size: 22px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+
+.sidebar p a {
+  color: #043049;
+  font-weight: 600;
+}
+
+.sidebar .learn a  {
+  font-weight: 600;
+  font-size: 24px; 
+  text-align: right;
+  margin-top: 30px;
+  color: #033048;
+
+}
+
